@@ -34,21 +34,43 @@ const fetchFoodBanks = async(lat, long) => {
 }
 
 const getFoodBanks = (foodBanksData) => {
+	//rename variables
+	const newTH = document.createElement('TR');
+	const newTDName = document.createElement('TH');
+	newTDName.append("Name");
+	newTH.append(newTDName);
+	const newTDDistance = document.createElement('TH');
+	newTDDistance.append("Distance (miles)");
+	newTH.append(newTDDistance);
+	foodBanksList.append(newTH);
+
 	for(let foodBank of foodBanksData){
+		//escape HTML charcters
 		const name = foodBank.properties.title;
+		//round it to 2 decimal places and append unit
 		const distance = foodBank.properties.distance;
+		// make it a link that is clicable in another tab
 		const website = foodBank.properties.website;
+		// can we open google map??? embedded and inline??
 		const address = foodBank.properties.address;
 		const city = foodBank.properties.city;
 		const info = name + "\n" + distance + "\n" + website + "\n" + address + ", " + city;
 		console.log(info);
-		addFoodBanks(info);
+		addFoodBanks(name, distance);
 	}
 }
 
-const addFoodBanks = (info) => {
-	const newLI = document.createElement('LI');
-	newLI.append(info);
+const addFoodBanks = (name, distance) => {
+	//rename variables
+	//apply CSS styling 
+	const newLI = document.createElement('TR');
+	const newNameTD = document.createElement('TD');
+	newNameTD.append(name);
+	const newDistanceTD = document.createElement('TD');
+	newDistanceTD.append(distance);
+	newLI.append(newNameTD);
+	newLI.append(newDistanceTD);
+	// newLI.append(info);
 	foodBanksList.append(newLI);
 }
 
