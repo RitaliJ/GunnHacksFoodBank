@@ -109,12 +109,6 @@ p, .quote{
 }
 
 
-
-
-#heading1{
-  color: #278ce8;
-}
-
 h2 {
   color: #fafafa;
   font-family: 'Outfit';
@@ -133,20 +127,20 @@ h3 + h4 {
   margin: auto;
 }
 
-li {
-  font-family: 'Lato';
-  margin: auto;
-  padding: 3px;
+#foodBanksList {
+    font-family: 'Outfit';
+    width: 80%;
+    margin:  auto;
 }
 
-.footer {
-  display: flex;
-  text-align: center;
-  width: min(90vw, 1320px);
+
+li {
   margin: auto;
-  align-items: center;
-  flex-wrap: wrap;
+  padding: 3px;
+  font-size: 1.3em;
 }
+
+
 
 .row {
   width: min(80vw, 1320px);
@@ -163,6 +157,17 @@ li {
 .mb-3{
   width: 60%;
   margin:  auto;
+  font-size: 1.3em;
+}
+#zipCodeInput{
+    font-size:  1em;
+}
+#zipCodeButton, #output{
+    margin-top:  0.5em;
+    margin-bottom: 3em;
+}
+#output{
+    margin-bottom: 10em;
 }
 
 
