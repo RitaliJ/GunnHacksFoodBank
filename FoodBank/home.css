@@ -127,17 +127,20 @@ h3 + h4 {
   margin: auto;
 }
 
-#foodBanksList {
+#foodBanksTable {
     font-family: 'Outfit';
     width: 80%;
     margin:  auto;
 }
 
 
-li {
-  margin: auto;
-  padding: 3px;
+th, td {
   font-size: 1.3em;
+  padding: 0.5em 1em 0.5em 2em;
+  border-bottom: 1px solid #ddd;
+}
+th{
+  padding-top: 1.5em;
 }
 
 
@@ -164,11 +167,14 @@ li {
 }
 #zipCodeButton, #output{
     margin-top:  0.5em;
-    margin-bottom: 3em;
 }
 #output{
-    margin-bottom: 10em;
+    margin-bottom: 3em;
 }
+#output p{
+    text-align: center;
+    font-size: 2em;
+} 
 
 
 @media screen and (max-width: 900px){
