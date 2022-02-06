@@ -189,3 +189,11 @@ th{
   }
 }
 
+#discordLink{
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 1em;
+    margin: auto;
+    margin-bottom: 5em;
+}
