@@ -61,7 +61,7 @@ async def on_message(message):
     await message.channel.send(helpMessage)
 
   if message.content.startswith("!foodBankWebsite"):
-    await message.channel.send("I hate society")
+    await message.channel.send("https://cafoodbanks.herokuapp.com/")
   
   if message.content.startswith("!foodBankCounty"):
     if any(word in message.content for word in county):
