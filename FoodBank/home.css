@@ -189,9 +189,3 @@ th{
   }
 }
 
-@media screen and (max-width:  600px){
-  p{
-      text-align: left;
-  }
-}
-
