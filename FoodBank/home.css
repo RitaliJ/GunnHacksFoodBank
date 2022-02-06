@@ -1,0 +1,186 @@
+/* Mission Statement CSS*/
+
+.image{
+    margin-left: -16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission {
+   position: absolute;
+}
+
+.statement{
+    color: white;
+    font-family: 'Outfit';
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: min(8vw, 70px);
+    max-width: 90vw;
+    text-align: center;
+    background-color: rgba(0,0,0,.4);
+}
+
+
+.sectionTitle{
+    color: #0a9396;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: min(8vw, 50px);
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+}
+
+
+p, .quote{
+    color: #0a9396;
+    text-align: justify;
+    font-family: 'Outfit', sans-serif; 
+    font-size: min(4.5vw, 20px);
+    max-width: min(80vw, 1320px);
+    margin: auto;
+    padding: 3vw 0 5vw 0;
+}
+
+
+.quote {
+    padding-top: 15px;
+}
+
+
+/* Our Progress CSS */
+
+#foodInsecurityStats{
+     background-color: white;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 0;
+    width: min(100%, 1320px);
+    padding-top: 2em;
+    margin: auto;
+}
+
+
+.statistics {
+    padding: 0em;
+    margin: 0.5em auto;
+    
+}
+
+.statistics h4, .statistics p{
+    text-align: center;
+}
+
+.statistics p {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.statistics h4{
+    color: white;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    border-radius: 100%;
+    background-color: #94d2bd;
+    padding: 1em;
+    border-color: #0a9396;
+    border-style: solid;
+    border-width: 3px;
+    width: 225px;
+    height: 225px;
+    
+    line-height: 125%;
+    margin: auto;
+
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#heading1{
+  color: #278ce8;
+}
+
+h2 {
+  color: #fafafa;
+  font-family: 'Outfit';
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: auto;
+}
+
+h3 + h4 {
+  color: #f89e09;
+  font-family: 'Outfit';
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: lighter;
+  max-width: min(80vw, 1320px);
+  margin: auto;
+}
+
+li {
+  font-family: 'Lato';
+  margin: auto;
+  padding: 3px;
+}
+
+.footer {
+  display: flex;
+  text-align: center;
+  width: min(90vw, 1320px);
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.row {
+  width: min(80vw, 1320px);
+  margin: auto;
+  text-align: center;
+
+}
+
+.images {
+  padding: 10px;
+  height: auto;
+}
+
+.mb-3{
+  width: 60%;
+  margin:  auto;
+}
+
+
+@media screen and (max-width: 900px){
+  .row{
+      grid-template-columns: repeat(1, 100%);
+  }
+  .footer-logo{
+      position: relative;
+  }
+  .footer{
+      flex-direction: column;
+  }
+}
+
+@media screen and (max-width:  600px){
+  p{
+      text-align: left;
+  }
+}
+
